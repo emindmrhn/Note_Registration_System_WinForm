@@ -47,9 +47,7 @@ namespace Note_Registration_System
             this.label5 = new System.Windows.Forms.Label();
             this.txtE1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblPass = new System.Windows.Forms.Label();
             this.lblAverage = new System.Windows.Forms.Label();
-            this.lblRemaining = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -61,6 +59,8 @@ namespace Note_Registration_System
             this.dbNoteRegDataSet3 = new Note_Registration_System.DbNoteRegDataSet3();
             this.tblLessonBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_LessonTableAdapter2 = new Note_Registration_System.DbNoteRegDataSet3TableAdapters.Tbl_LessonTableAdapter();
+            this.lblPass = new System.Windows.Forms.Label();
+            this.lblrema = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -227,9 +227,9 @@ namespace Note_Registration_System
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lblrema);
             this.groupBox3.Controls.Add(this.lblPass);
             this.groupBox3.Controls.Add(this.lblAverage);
-            this.groupBox3.Controls.Add(this.lblRemaining);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label9);
@@ -240,16 +240,6 @@ namespace Note_Registration_System
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Exam Notes";
             // 
-            // lblPass
-            // 
-            this.lblPass.AutoSize = true;
-            this.lblPass.Location = new System.Drawing.Point(212, 96);
-            this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(28, 18);
-            this.lblPass.TabIndex = 11;
-            this.lblPass.Text = "00";
-            this.lblPass.Click += new System.EventHandler(this.lblPass_Click);
-            // 
             // lblAverage
             // 
             this.lblAverage.AutoSize = true;
@@ -259,15 +249,6 @@ namespace Note_Registration_System
             this.lblAverage.TabIndex = 10;
             this.lblAverage.Text = "00";
             this.lblAverage.Click += new System.EventHandler(this.lblAverage_Click);
-            // 
-            // lblRemaining
-            // 
-            this.lblRemaining.AutoSize = true;
-            this.lblRemaining.Location = new System.Drawing.Point(176, 138);
-            this.lblRemaining.Name = "lblRemaining";
-            this.lblRemaining.Size = new System.Drawing.Size(28, 18);
-            this.lblRemaining.TabIndex = 9;
-            this.lblRemaining.Text = "00";
             // 
             // label7
             // 
@@ -346,6 +327,24 @@ namespace Note_Registration_System
             // 
             this.tbl_LessonTableAdapter2.ClearBeforeFill = true;
             // 
+            // lblPass
+            // 
+            this.lblPass.AutoSize = true;
+            this.lblPass.Location = new System.Drawing.Point(212, 96);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(28, 18);
+            this.lblPass.TabIndex = 12;
+            this.lblPass.Text = "00";
+            // 
+            // lblrema
+            // 
+            this.lblrema.AutoSize = true;
+            this.lblrema.Location = new System.Drawing.Point(176, 138);
+            this.lblrema.Name = "lblrema";
+            this.lblrema.Size = new System.Drawing.Size(28, 18);
+            this.lblrema.TabIndex = 13;
+            this.lblrema.Text = "00";
+            // 
             // FrmTeacherDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -400,9 +399,7 @@ namespace Note_Registration_System
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.Label lblAverage;
-        private System.Windows.Forms.Label lblRemaining;
         private System.Windows.Forms.GroupBox groupBox4;
         //   private DbNoteRegDataSet dbNoteRegDataSet;
         private System.Windows.Forms.BindingSource tblLessonBindingSource;
@@ -426,5 +423,7 @@ namespace Note_Registration_System
         private System.Windows.Forms.DataGridViewTextBoxColumn sTDE3DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aVERAGEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn sITUATIONDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.Label lblrema;
+        private System.Windows.Forms.Label lblPass;
     }
 }
