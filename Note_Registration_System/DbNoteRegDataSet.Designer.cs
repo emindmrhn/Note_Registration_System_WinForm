@@ -20,9 +20,9 @@ namespace Note_Registration_System {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DbNoteRegDataSet3")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DbNoteRegDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DbNoteRegDataSet3 : global::System.Data.DataSet {
+    public partial class DbNoteRegDataSet : global::System.Data.DataSet {
         
         private Tbl_LessonDataTable tableTbl_Lesson;
         
@@ -30,7 +30,7 @@ namespace Note_Registration_System {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DbNoteRegDataSet3() {
+        public DbNoteRegDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Note_Registration_System {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected DbNoteRegDataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DbNoteRegDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace Note_Registration_System {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DbNoteRegDataSet3 cln = ((DbNoteRegDataSet3)(base.Clone()));
+            DbNoteRegDataSet cln = ((DbNoteRegDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace Note_Registration_System {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DbNoteRegDataSet3";
+            this.DataSetName = "DbNoteRegDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DbNoteRegDataSet3.xsd";
+            this.Namespace = "http://tempuri.org/DbNoteRegDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableTbl_Lesson = new Tbl_LessonDataTable();
@@ -225,7 +225,7 @@ namespace Note_Registration_System {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DbNoteRegDataSet3 ds = new DbNoteRegDataSet3();
+            DbNoteRegDataSet ds = new DbNoteRegDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -580,7 +580,7 @@ namespace Note_Registration_System {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DbNoteRegDataSet3 ds = new DbNoteRegDataSet3();
+                DbNoteRegDataSet ds = new DbNoteRegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -924,7 +924,7 @@ namespace Note_Registration_System {
         }
     }
 }
-namespace Note_Registration_System.DbNoteRegDataSet3TableAdapters {
+namespace Note_Registration_System.DbNoteRegDataSetTableAdapters {
     
     
     /// <summary>
@@ -1096,7 +1096,7 @@ namespace Note_Registration_System.DbNoteRegDataSet3TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DbNoteRegDataSet3.Tbl_LessonDataTable dataTable) {
+        public virtual int Fill(DbNoteRegDataSet.Tbl_LessonDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1109,9 +1109,9 @@ namespace Note_Registration_System.DbNoteRegDataSet3TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DbNoteRegDataSet3.Tbl_LessonDataTable GetData() {
+        public virtual DbNoteRegDataSet.Tbl_LessonDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DbNoteRegDataSet3.Tbl_LessonDataTable dataTable = new DbNoteRegDataSet3.Tbl_LessonDataTable();
+            DbNoteRegDataSet.Tbl_LessonDataTable dataTable = new DbNoteRegDataSet.Tbl_LessonDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1119,14 +1119,14 @@ namespace Note_Registration_System.DbNoteRegDataSet3TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DbNoteRegDataSet3.Tbl_LessonDataTable dataTable) {
+        public virtual int Update(DbNoteRegDataSet.Tbl_LessonDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DbNoteRegDataSet3 dataSet) {
+        public virtual int Update(DbNoteRegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Tbl_Lesson");
         }
         
@@ -1306,7 +1306,7 @@ namespace Note_Registration_System.DbNoteRegDataSet3TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(DbNoteRegDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DbNoteRegDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_LessonTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Tbl_Lesson.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1325,7 +1325,7 @@ namespace Note_Registration_System.DbNoteRegDataSet3TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(DbNoteRegDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DbNoteRegDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_LessonTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Tbl_Lesson.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1343,7 +1343,7 @@ namespace Note_Registration_System.DbNoteRegDataSet3TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(DbNoteRegDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DbNoteRegDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tbl_LessonTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Tbl_Lesson.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1385,7 +1385,7 @@ namespace Note_Registration_System.DbNoteRegDataSet3TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(DbNoteRegDataSet3 dataSet) {
+        public virtual int UpdateAll(DbNoteRegDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

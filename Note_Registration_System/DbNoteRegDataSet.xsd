@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DbNoteRegDataSet3" targetNamespace="http://tempuri.org/DbNoteRegDataSet3.xsd" xmlns:mstns="http://tempuri.org/DbNoteRegDataSet3.xsd" xmlns="http://tempuri.org/DbNoteRegDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="DbNoteRegDataSet" targetNamespace="http://tempuri.org/DbNoteRegDataSet.xsd" xmlns:mstns="http://tempuri.org/DbNoteRegDataSet.xsd" xmlns="http://tempuri.org/DbNoteRegDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -51,7 +51,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DbNoteRegDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DbNoteRegDataSet3" msprop:Generator_UserDSName="DbNoteRegDataSet3">
+  <xs:element name="DbNoteRegDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DbNoteRegDataSet" msprop:Generator_UserDSName="DbNoteRegDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Tbl_Lesson" msprop:Generator_TableClassName="Tbl_LessonDataTable" msprop:Generator_TableVarName="tableTbl_Lesson" msprop:Generator_TablePropName="Tbl_Lesson" msprop:Generator_RowDeletingName="Tbl_LessonRowDeleting" msprop:Generator_RowChangingName="Tbl_LessonRowChanging" msprop:Generator_RowEvHandlerName="Tbl_LessonRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_LessonRowDeleted" msprop:Generator_UserTableName="Tbl_Lesson" msprop:Generator_RowChangedName="Tbl_LessonRowChanged" msprop:Generator_RowEvArgName="Tbl_LessonRowChangeEvent" msprop:Generator_RowClassName="Tbl_LessonRow">

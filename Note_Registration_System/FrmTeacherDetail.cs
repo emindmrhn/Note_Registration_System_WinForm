@@ -14,6 +14,7 @@ namespace Note_Registration_System
 {
     public partial class FrmTeacherDetail : Form
     {
+
         public FrmTeacherDetail()
         {
             InitializeComponent();
@@ -48,6 +49,8 @@ namespace Note_Registration_System
 
         private void FrmTeacherDetail_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dbNoteRegDataSet.Tbl_Lesson' table. You can move, or remove it, as needed.
+            this.tbl_LessonTableAdapter.Fill(this.dbNoteRegDataSet.Tbl_Lesson);
             // TODO: This line of code loads data into the 'dbNoteRegDataSet2.Tbl_Lesson' table. You can move, or remove it, as needed.
             this.tbl_LessonTableAdapter3.Fill(this.dbNoteRegDataSet2.Tbl_Lesson);
             // TODO: This line of code loads data into the 'dbNoteRegDataSet3.Tbl_Lesson' table. You can move, or remove it, as needed.
@@ -109,7 +112,7 @@ namespace Note_Registration_System
             avg = (e1 + e2 + e3) / 3;
             lblAverage.Text = avg.ToString();
 
-
+            lblPass.Text = dbNoteRegDataSet3.Tbl_Lesson.Count(x => x.SITUATION == true).ToString();
 
             if (avg >= 50)
             {
@@ -132,8 +135,6 @@ namespace Note_Registration_System
             _connection.Close();
             MessageBox.Show("Student grades updated!");
             
-            lblPass.Text = dbNoteRegDataSet3.Tbl_Lesson.Count(x => x.SITUATION == true).ToString();
-            lblrema.Text = dbNoteRegDataSet3.Tbl_Lesson.Count(x => x.SITUATION == false).ToString();
 
        //     this.tbl_LessonTableAdapter.Fill(this.dbNoteRegDataSet.Tbl_Lesson);
 
@@ -145,6 +146,21 @@ namespace Note_Registration_System
         }
 
         private void lblAverage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPass_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRema_Click(object sender, EventArgs e)
         {
 
         }

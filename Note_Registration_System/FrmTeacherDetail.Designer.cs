@@ -47,6 +47,8 @@ namespace Note_Registration_System
             this.label5 = new System.Windows.Forms.Label();
             this.txtE1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblRema = new System.Windows.Forms.Label();
+            this.lblPass = new System.Windows.Forms.Label();
             this.lblAverage = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,8 +61,9 @@ namespace Note_Registration_System
             this.dbNoteRegDataSet3 = new Note_Registration_System.DbNoteRegDataSet3();
             this.tblLessonBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_LessonTableAdapter2 = new Note_Registration_System.DbNoteRegDataSet3TableAdapters.Tbl_LessonTableAdapter();
-            this.lblPass = new System.Windows.Forms.Label();
-            this.lblrema = new System.Windows.Forms.Label();
+            this.dbNoteRegDataSet = new Note_Registration_System.DbNoteRegDataSet();
+            this.tblLessonBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_LessonTableAdapter = new Note_Registration_System.DbNoteRegDataSetTableAdapters.Tbl_LessonTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -71,6 +74,8 @@ namespace Note_Registration_System
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -227,7 +232,7 @@ namespace Note_Registration_System
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.lblrema);
+            this.groupBox3.Controls.Add(this.lblRema);
             this.groupBox3.Controls.Add(this.lblPass);
             this.groupBox3.Controls.Add(this.lblAverage);
             this.groupBox3.Controls.Add(this.label7);
@@ -239,6 +244,26 @@ namespace Note_Registration_System
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Exam Notes";
+            // 
+            // lblRema
+            // 
+            this.lblRema.AutoSize = true;
+            this.lblRema.Location = new System.Drawing.Point(176, 138);
+            this.lblRema.Name = "lblRema";
+            this.lblRema.Size = new System.Drawing.Size(28, 18);
+            this.lblRema.TabIndex = 15;
+            this.lblRema.Text = "00";
+            this.lblRema.Click += new System.EventHandler(this.lblRema_Click);
+            // 
+            // lblPass
+            // 
+            this.lblPass.AutoSize = true;
+            this.lblPass.Location = new System.Drawing.Point(212, 96);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(28, 18);
+            this.lblPass.TabIndex = 14;
+            this.lblPass.Text = "00";
+            this.lblPass.Click += new System.EventHandler(this.label10_Click);
             // 
             // lblAverage
             // 
@@ -327,23 +352,19 @@ namespace Note_Registration_System
             // 
             this.tbl_LessonTableAdapter2.ClearBeforeFill = true;
             // 
-            // lblPass
+            // dbNoteRegDataSet
             // 
-            this.lblPass.AutoSize = true;
-            this.lblPass.Location = new System.Drawing.Point(212, 96);
-            this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(28, 18);
-            this.lblPass.TabIndex = 12;
-            this.lblPass.Text = "00";
+            this.dbNoteRegDataSet.DataSetName = "DbNoteRegDataSet";
+            this.dbNoteRegDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // lblrema
+            // tblLessonBindingSource4
             // 
-            this.lblrema.AutoSize = true;
-            this.lblrema.Location = new System.Drawing.Point(176, 138);
-            this.lblrema.Name = "lblrema";
-            this.lblrema.Size = new System.Drawing.Size(28, 18);
-            this.lblrema.TabIndex = 13;
-            this.lblrema.Text = "00";
+            this.tblLessonBindingSource4.DataMember = "Tbl_Lesson";
+            this.tblLessonBindingSource4.DataSource = this.dbNoteRegDataSet;
+            // 
+            // tbl_LessonTableAdapter
+            // 
+            this.tbl_LessonTableAdapter.ClearBeforeFill = true;
             // 
             // FrmTeacherDetail
             // 
@@ -373,6 +394,8 @@ namespace Note_Registration_System
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -423,7 +446,10 @@ namespace Note_Registration_System
         private System.Windows.Forms.DataGridViewTextBoxColumn sTDE3DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aVERAGEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn sITUATIONDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.Label lblrema;
         private System.Windows.Forms.Label lblPass;
+        private System.Windows.Forms.Label lblRema;
+        private DbNoteRegDataSet dbNoteRegDataSet;
+        private System.Windows.Forms.BindingSource tblLessonBindingSource4;
+        private DbNoteRegDataSetTableAdapters.Tbl_LessonTableAdapter tbl_LessonTableAdapter;
     }
 }

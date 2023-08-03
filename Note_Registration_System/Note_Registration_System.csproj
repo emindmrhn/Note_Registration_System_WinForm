@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DbNoteRegDataSet3.Designer.cs">
+    <Compile Include="DbNoteRegDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DbNoteRegDataSet3.xsd</DependentUpon>
+      <DependentUpon>DbNoteRegDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Frm.Login.cs">
       <SubType>Form</SubType>
@@ -90,16 +90,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DbNoteRegDataSet3.xsc">
-      <DependentUpon>DbNoteRegDataSet3.xsd</DependentUpon>
+    <None Include="DbNoteRegDataSet.xsc">
+      <DependentUpon>DbNoteRegDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DbNoteRegDataSet3.xsd">
+    <None Include="DbNoteRegDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbNoteRegDataSet3.Designer.cs</LastGenOutput>
+      <LastGenOutput>DbNoteRegDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DbNoteRegDataSet3.xss">
-      <DependentUpon>DbNoteRegDataSet3.xsd</DependentUpon>
+    <None Include="DbNoteRegDataSet.xss">
+      <DependentUpon>DbNoteRegDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
